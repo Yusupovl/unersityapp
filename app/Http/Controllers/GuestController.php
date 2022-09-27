@@ -70,7 +70,7 @@ class GuestController extends Controller
             $fileNameWithExt = $filemodel->getClientOriginalName();
             $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
             $ext = $filemodel->getClientOriginalExtension();
-            $fileNameToStore = $filename . "_" . time() . "_" . $ext;
+            $fileNameToStore = $filename . "_" . time() . "." . $ext;
             #Storage::disk('talaba')->put('', $filemodel, $fileNameToStore);
             $request->file("pasport_rasm")->storeAs("", $fileNameToStore, "foydalanuvchi");
             #$path = $filemodel->storeAs('public/images', $fileNameToStore);

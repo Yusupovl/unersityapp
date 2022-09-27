@@ -26,7 +26,7 @@ Route::get('/login',[AsosiyController::class,'loginview'])->name('login');
 Route::get('/loginCheck',[AsosiyController::class,'check'])->name('loginCheck');
 Route::get('/asosiyga',[AsosiyController::class,'asosiy'])->name('asosiyga');
 
-Route::post('store',[FoydalanuvchiController::class,'store'])->name('guest');
+Route::post('store',[FoydalanuvchiController::class,'store'])->name('gueststore');
 
 Route::resource('guest',GuestController::class);
 

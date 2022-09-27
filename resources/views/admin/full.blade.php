@@ -8,7 +8,7 @@ Hodimlar panel
 
 @section('content')
 
-<br><img src="storage/app/foydalanuvchi/{{$foy->pasport_rasm}}" class="img-thumbnail" width="400px" height="1000px" alt="...">
+<br><img src="/foydalanuvchi/{{$foy->pasport_rasm}}" class="img-thumbnail" width="400px" height="1000px" alt="...">
 
 <h1 class="h3 mb-4 mt-4 text-gray-800"> F.I.O : {{$foy->ism}} {{$foy->familya}} {{$foy->sharif}}  </h1>
 
